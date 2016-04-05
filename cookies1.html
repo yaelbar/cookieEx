@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<script>
+			function addCookie(){
+				var name = document.getElementById("name").innerHTML;
+				var mail = document.getElementById("mail").innerHTML;
+				var age = document.getElementById("age").innerHTML;
+				
+				document.cookie = "name"=name;
+				document.cookie = "mail"=mail;
+				document.cookie = "age"=age;
+				
+				window.history.forward();
+				
+			}
+		
+		</script>
+	
+	</head>
+	<body>
+		
+		<label for="name">name</label></br>
+		<input type="text" id="name"/></br>
+		<label for="mail">e-mail</label></br>
+		<input type="text" id="mail"/></br>
+		<label for="age">age</label></br>
+		<input type="text" id="age"/></br>
+			
+		<button onclick="addCookie">go to the next page</button>
+	
+	</body>
+
+</html>
